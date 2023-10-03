@@ -113,8 +113,6 @@ namespace API.Controllers
 
             MemoryStream memoryStream = new();
 
-            string path = "C:Ruta/de/la/carpeta";
-
             PdfWriter writer = new(memoryStream);
             PdfDocument pdf = new(writer);
             Document document = new(pdf);
@@ -130,7 +128,6 @@ namespace API.Controllers
             
             document.Add(header);
             document.Add(marginButton);
-
 
             string[] encabezados = { "Nombre", "Cedula", "Referencia Producto", "Producto", "Fecha Venta", "Cantidad", "Total" };
             string[] meses = {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"};
