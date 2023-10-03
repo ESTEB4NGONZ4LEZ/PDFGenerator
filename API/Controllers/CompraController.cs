@@ -113,6 +113,8 @@ namespace API.Controllers
 
             MemoryStream memoryStream = new();
 
+            string path = "C:Ruta/de/la/carpeta";
+
             PdfWriter writer = new(memoryStream);
             PdfDocument pdf = new(writer);
             Document document = new(pdf);
