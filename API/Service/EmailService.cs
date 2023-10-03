@@ -48,7 +48,7 @@ namespace API.Service
             string imagePath = "C:/Users/Esteban/Documents/JS/YeimyLu/img/logo.png";
             ImageData imageData = ImageDataFactory.Create(imagePath);
             Image image = new(imageData);
-            image.SetWidth(50);
+            image.SetWidth(100);
     
             Paragraph header = new();
             header.Add(image).SetTextAlignment(TextAlignment.CENTER);
@@ -58,9 +58,9 @@ namespace API.Service
             document.Add(header);
             document.Add(marginButton);
 
-            Paragraph titulo = new Paragraph("BABALU - FACTURA DE VENTA")
+            Paragraph titulo = new Paragraph("FACTURA DE VENTA")
                     .SetTextAlignment(TextAlignment.CENTER)
-                    .SetFontSize(18);
+                    .SetFontSize(12);
 
             document.Add(titulo);
 
@@ -99,7 +99,7 @@ namespace API.Service
             {
                 Content = new MimeContent(new MemoryStream(memoryStream.ToArray()), ContentEncoding.Default),
                 ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
-                FileName = $"FACTUA {cliente.Nombres.ToUpper()} {data.Fecha}"
+                FileName = $"FACTURA {cliente.Nombres.ToUpper()} {data.Fecha}"
             };
 
             builder.Attachments.Add(pdfAttachment);

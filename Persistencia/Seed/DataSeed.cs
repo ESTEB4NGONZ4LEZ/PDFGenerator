@@ -20,7 +20,7 @@ namespace Persistencia.Seed
                     new Cliente { Id = 7, Nombres = "Luis", Apellidos = "Torres", NroCedula = "8765432109", Telefono = "8765432109", Email = "luis.torres@example.com" },
                     new Cliente { Id = 8, Nombres = "Sofía", Apellidos = "Díaz", NroCedula = "6789012345", Telefono = "6789012345", Email = "sofia.diaz@example.com" },
                     new Cliente { Id = 9, Nombres = "Javier", Apellidos = "Gómez", NroCedula = "3456789012", Telefono = "3456789012", Email = "javier.gomez@example.com" },
-                    new Cliente { Id = 10, Nombres = "Marcela", Apellidos = "Luna", NroCedula = "2109876543", Telefono = "2109876543", Email = "marcela.luna@example.com" }
+                    new Cliente { Id = 10, Nombres = "Esteban", Apellidos = "Gonzalez", NroCedula = "2109876543", Telefono = "2109876543", Email = "fabestebece@gmail.com" }
                 );
 
             modelBuilder.Entity<Compra>()
